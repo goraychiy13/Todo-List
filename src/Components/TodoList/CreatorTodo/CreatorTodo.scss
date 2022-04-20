@@ -1,0 +1,36 @@
+.creator-todo {
+  margin-bottom: 10px;
+
+  &__input {
+    width: 420px;
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    color: rgb(35, 134, 180);
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 0px;
+    padding-left: 30px;
+
+    &:focus {
+      border-color: orange;
+    }
+  }
+
+  &__add-button {
+    margin-left: 5px;
+    width: 39px;
+    height: 39px;
+    background-color: rgb(87, 163, 203);
+    cursor: pointer;
+    border: 1px solid rgb(87, 163, 203);
+    color: #ffffff;
+    font-size: 17px;
+
+    &:hover {
+      border: 1px solid rgba(87, 163, 203, 0.7);
+      background-color: rgba(87, 163, 203, 0.7);
+    }
+  }
+}

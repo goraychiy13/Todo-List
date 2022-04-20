@@ -1,0 +1,53 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 35px;
+
+  &__remove-checked-btn {
+    width: 190px;
+    background-color: rgb(87, 163, 203);
+    cursor: pointer;
+    border: 1px solid rgb(87, 163, 203);
+    color: #ffffff;
+    font-size: 17px;
+
+    &:hover {
+      border: 1px solid rgba(87, 163, 203, 0.7);
+      background-color: rgba(87, 163, 203, 0.7);
+    }
+
+    &--disabled {
+      background-color: rgb(216, 216, 238);
+      border: 1px solid rgb(216, 216, 238);
+      cursor: unset;
+
+      &:hover {
+        border: 1px solid rgb(216, 216, 238);
+        background-color: rgb(216, 216, 238);
+      }
+    }
+  }
+}
+
+.completed-todo {
+  position: relative;
+  text-align: center;
+  color: rgb(85, 84, 85);
+  width: 220px;
+  height: 30px;
+  border: 1px solid rgb(235, 237, 238);
+  z-index: 0;
+
+  &__indicator {
+    position: absolute;
+    height: 30px;
+    background-color: rgba(251, 236, 73, 0.4);
+    z-index: 1000;
+  }
+
+  &__info {
+    z-index: 1001;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,21 @@
+.todo-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+  background-color: #ffffff;
+  padding: 10px 20px;
+
+  &__title {
+    margin: 0 0 10px 0;
+    color: rgb(85, 84, 85);
+  }
+
+  &__items-missing-info {
+    font-size: 20px;
+    color: red;
+    font-style: italic;
+  }
+}
+
